@@ -12,8 +12,8 @@ let mailInvitati = [];
 let numeroPartecipanti;
 let mail;
 let emailCheck;
-numeroPartecipanti = prompt("Inserisci il numero dei partecipanti")
-for( i = 0; i < numeroPartecipanti.length; i++){
+numeroPartecipanti = parseInt( prompt("Inserisci il numero dei partecipanti"))
+for( i = 0; i < numeroPartecipanti; i++){
     mailInvitati [i] = prompt(`Inserisci la mail dell' invitato numero ${i+1}`)
 }
 console.log(mailInvitati);
