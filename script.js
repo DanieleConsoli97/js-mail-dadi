@@ -9,16 +9,18 @@
 // Nota:
 // Non è necessario provvedere alla validazione delle email
 let mailInvitati = [];
+let numeroPartecipanti;
 let mail;
 let emailCheck;
-for( i = 0; i < 10; i++){
+numeroPartecipanti = prompt("Inserisci il numero dei partecipanti")
+for( i = 0; i < numeroPartecipanti.length; i++){
     mailInvitati [i] = prompt(`Inserisci la mail dell' invitato numero ${i+1}`)
 }
 console.log(mailInvitati);
 
 mail = prompt("Inserisci la tua mail")
 for ( i=0 ; i < mailInvitati.length; i++){
-    if (mailInvitati[i]== mail){
+    if (mailInvitati[i] == mail){
         emailCheck=true;
     }else{
         emailCheck=false;
